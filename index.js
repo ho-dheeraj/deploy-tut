@@ -11,7 +11,7 @@ app.use(express.static(path.join(__dirname, "client", "build")));
   });
 });
 if (process.env.NODE_ENV === "prod") {
-  app.listen((port = 80), () => {
+  app.listen((port = 3000), () => {
     console.log(`listening at http://localhost:${port}`);
   });
 } else {
