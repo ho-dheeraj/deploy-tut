@@ -10,6 +10,11 @@ app.use(express.static(path.join(__dirname, "client", "build")));
     res.sendFile(path.join(__dirname, "client", "build", "index.html"));
   });
 });
+
+app.use("/*", (req, res) => {
+  res.sendFile(path.join(__dirname, "client", "build", "index.html"));
+});
+
 if (process.env.NODE_ENV === "prod") {
   app.listen((port = 3000), () => {
     console.log(`listening at http://localhost:${port}`);
