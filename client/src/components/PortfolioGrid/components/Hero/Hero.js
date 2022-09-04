@@ -1,7 +1,7 @@
-import React from 'react';
-import Typed from 'react-typed';
-import Box from '@mui/material/Box';
-import Typography from '@mui/material/Typography';
+import React from "react";
+import Typed from "react-typed";
+import Box from "@mui/material/Box";
+import Typography from "@mui/material/Typography";
 
 const Hero = () => {
   return (
@@ -11,27 +11,27 @@ const Hero = () => {
           variant="h6"
           component="p"
           color="text.secondary"
-          align={'center'}
+          align={"center"}
           gutterBottom
           sx={{ fontWeight: 400 }}
         >
-          theFront will make your product look modern and professional while
-          saving you precious time.
+          Virat Kohli will help you find the best modern home for you, to ensure
+          maximum happiness.
         </Typography>
         <Typography
           variant="h3"
           color="text.primary"
-          align={'center'}
+          align={"center"}
           sx={{
             fontWeight: 700,
           }}
         >
-          We{' '}
+          We{" "}
           <Typed
             strings={[
-              'design and develop web apps',
-              'promote your business',
-              'do continues deployment',
+              "design and develop web apps",
+              "promote your business",
+              "do continues deployment",
             ]}
             typeSpeed={100}
             loop={true}

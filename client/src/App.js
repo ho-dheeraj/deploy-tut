@@ -3,8 +3,9 @@ import { useTheme } from "@mui/material/styles";
 import Travel from "./components/Travel/Travel";
 import Main from "./layouts/Main/Main";
 import Page from "./components/Page";
-import Advertisement from "./components/Advertisement/Advertisement";
+
 import { BrowserRouter, Route, Routes } from "react-router-dom";
+import MyPatner from "./components/MyPatner/MyPatner";
 
 const App = () => {
   const theme = useTheme();
@@ -14,7 +15,7 @@ const App = () => {
         <BrowserRouter>
           <Routes>
             <Route path="/" element={<Travel />} />
-            <Route path="/patner" element={<Advertisement />} />
+            <Route path="/patner" element={<MyPatner />} />
           </Routes>
         </BrowserRouter>
       </Main>
